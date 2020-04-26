@@ -42,25 +42,60 @@
 							<section class="post">
 								<header class="major">
 									<span class="date">April 21, 2020</span>
-									<h1>Detailed article describtion</h1>
-									<p>Summary of the article and motivation.</p>
+									<h1>Setting-up Nextcloud server</h1>
+									<p>Step-by-step guide</p>
 								</header>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<iframe width="600" height="375"
-									src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=1" frameborder="0" allowfullscreen="" >
-								</iframe>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
-								<p>Example of the code visual:</p>
-								<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-	print 'Iteration ' + i;
-	deck.shuffle();
-	i++;
-}
-									
-print 'It took ' + i + ' iterations to sort the deck.';
+								<!-- Box -->
+								<h2>Motivation</h2>
+									<p>If you don't want google, yandex, dropbox or any other corporation (or authorities by request) to control and access you data, this article is for you.</p>
+									<h3>Why <a href="https://www.nextcloud.com" target="_blank">Nextcloud</a>?</h3>
+										<dd>	
+											<ol>
+												<li>Secure by design, secure by default.</li>
+												<li>Open-source (<a href=https://github.com/nextcloud target="_blank">github</a>) and free.</li>
+												<li>Self-hosted.</li>
+												<li>Great desktop and mobile application (iOS and Android).</li>
+												<li>Sync folder feature.</li>
+												<li>Web access to the service.</li>
+											</ol>
+										</dd>
+								<h3>What will you need?</h3>
+											<ol>
+												<li>Linux machine (could be your home or cloud server).</li>
+												<li>20-30 min.</li>
+											</ol>
+								<h3>Setting-up guide</h3>
+								<dl>
+									<dt>1. Linux machine setting-up</dt>
+									<dd>
+										<p>I personally recommend to use cloud one just to make sure it is up and running all time regardless electricity and internet at home. If you are comfortable with home server, please use it.<br />
+										I am going to build one on <a href="https://www.digitalocean.com" target="_blank">Digital Ocean</a> droplet, which i prefer the most. If you don't have an account, feel free to use my <a href="https://m.do.co/c/345c2dd0104f" target="_blank">referral link</a>, you will get $100 and i will get $25.<br />
+										Once you've got your Digital Ocean account, create a new project and new droplet (Ubuntu 18.04.3 (LTS) x64) within this project. Please don't forget to add your ssh-keys (follow the instructions if you don't have ssh-keys)<br />
+										<i>Will add the steps on how to generate and add keys shortly, google it for now :)</i><br />
+									</p>
+									</dd>
+									<dt>2. Nextcloud installation</dt>
+									<dd>
+										<p>1. In order to check if your server is available, open a terminal and go for</p>
+										<pre><code>ssh root@"IP of your server"
 </code></pre>
+										<p>2. Enter your ssh-key password and vuala! Congrats, your server is up up and running!<br /></p>
+										<p>3. It's time to update the linux distro:</p>
+										<pre><code>sudo apt-get update
+</code></pre>
+										<p>4. Installing Nextcloud via snap package:</p>
+										<pre><code>sudo snap install nextcloud
+</code></pre>
+										<p>5. That's it! You can exit your terminal now.</p>
+									</dd>
+									<dt>3. Nextcloud login</dt>
+									<dd>
+										<p>1. That's it! Go to browser and check your IP address!<br /></p>
+										<p>2. Create login and password for your nextcloud account<br /></p>
+										<p>3. All is set! Install mobile and desktop apps, login with 3 steps: 1) IP add address, 2) login and 3) password</p>
+									</dd>
+								</dl>
+								
 							</section>
 
 					</div>
